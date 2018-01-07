@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Building Parking Pass Information Form</title>
+<script type="text/javascript">
+function validateForm () {
+var FullName = document.forms["sForm"]["FullName"].value;
+if (FullName == null || FullName == "") {
+	alert (" Please Fill All Required Fields ") ;
+	return false ;
+	} else {
+	document.getElementById("myForm").submit();
+	}
+}
+</script>
+</head>
+<body>
+<form id="sForm" name="sForm" action="BuildingRegistration.html" onsubmit="return validateForm()" method="post">
+<div>
+<b>Full Name:</b>
+<input type="text " name="FullName" id="FullName" class="student">
+<br>
+<br>
+<b>Building: </b>
+<br><input type="checkbox" name="Building1" value="Building1"> Building1<br>
+<input type="checkbox" name="Building2" value="Building2"> Building2
+<br>
+<br>
+<b>Car Brand</b>
+<select name="cars">
+<option value="Mercedes">Select Option</option>
+<option value="Volvo">Volvo</option>
+<option value="Saab">Saab</option>
+<option value="Fiat ">Fiat</ option>
+<option value="Audi">Audi</option>
+</select >
+<br><br>
+<b>Plate Number</b>
+<input type="text " name="plate" id="plate" class="plate-number">
+<br>
+<b>Registration state</b>
+<select name="state">
+<option value="Texas">Texas</option>
+<option value="Massachusetts">Massachusetts</option>
+<option value="California">California</option>
+<option value="New York">New York</ option>
+</select >
+<br>
+<br>
+
+</form>
+<div><input type="submit" value="Submit"></div>
+</div>
+</body>
+</html>
