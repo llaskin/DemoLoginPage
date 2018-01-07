@@ -75,7 +75,7 @@
 	
    <body>
       
-      <h2>Enter Username and Password</h2> 
+      <h2>Enter Name and Password</h2> 
       <div class = "container form-signin">
          
          <?php
