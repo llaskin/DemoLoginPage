@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a4a7aae-a807-4f6c-bac5-fa32e832bb3e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/saucelabs/SampleSauceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/saucelabs/SampleSauceTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/SampleSauceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/SampleSauceTest.java" />
-    </list>
+    <list default="true" id="8a4a7aae-a807-4f6c-bac5-fa32e832bb3e" name="Default" comment="" />
     <ignored path="sauce-project.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,12 +24,10 @@
       <file leaf-file-name="SampleSauceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/saucelabs/SampleSauceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
-              <caret line="159" column="35" lean-forward="true" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
+            <state relative-caret-position="689">
+              <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-                <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -42,7 +37,7 @@
         <entry file="jar://$MAVEN_REPOSITORY$/com/saucelabs/sauce_java_common/2.1.23/sauce_java_common-2.1.23.jar!/com/saucelabs/common/SauceOnDemandAuthentication.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -63,7 +58,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -88,7 +83,6 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1023" />
@@ -108,7 +102,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -124,6 +117,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -582,7 +576,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1680" height="1023" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -649,8 +643,24 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/saucelabs/sauce_java_common/2.1.23/sauce_java_common-2.1.23.jar!/com/saucelabs/common/SauceOnDemandAuthentication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/saucelabs/SampleSauceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -661,8 +671,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -673,8 +681,6 @@
           <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -685,28 +691,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/saucelabs/SampleSauceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -725,8 +709,24 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/saucelabs/SampleSauceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -745,8 +745,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -765,8 +763,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -777,8 +773,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -789,8 +783,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -801,8 +793,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -813,8 +803,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -825,8 +813,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -837,8 +823,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -849,8 +833,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -861,8 +843,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -880,8 +860,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -899,8 +877,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -918,8 +894,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -937,8 +911,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -956,8 +928,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -973,19 +943,17 @@
     <entry file="jar://$MAVEN_REPOSITORY$/com/saucelabs/sauce_java_common/2.1.23/sauce_java_common-2.1.23.jar!/com/saucelabs/common/SauceOnDemandAuthentication.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/saucelabs/SampleSauceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="159" column="35" lean-forward="true" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
+        <state relative-caret-position="689">
+          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513802412000" expanded="false" signature="7197:7208" ph=" { " />
-            <marker date="1513802412000" expanded="false" signature="7225:7231" ph=" }" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="7" name="com.saucelabs.SampleSauceTest" time="133.825" errors="5" skipped="0">
+<testsuite tests="80" failures="38" name="com.saucelabs.SampleSauceTest" time="324.974" errors="6" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
@@ -35,7 +35,7 @@
     <property name="os.version" value="10.12.6"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/llaskin"/>
-    <property name="user.timezone" value="America/Chicago"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
@@ -62,140 +62,12 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest2[4]" time="3.267">
-    <error message="Unable to parse remote response: Unsupported OS/browser/version/device combo: OS: &apos;Windows 10&apos;, Browser: &apos;edge&apos;, Version: &apos;latest&apos;, Device: &apos;unspecified&apos;
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;Leo-Laskin-NAT.local&apos;, ip: &apos;fe80:0:0:0:18b4:e00:87b7:64f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: Unable to parse remote response: Unsupported OS/browser/version/device combo: OS: &apos;Windows 10&apos;, Browser: &apos;edge&apos;, Version: &apos;latest&apos;, Device: &apos;unspecified&apos;
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;Leo-Laskin-NAT.local&apos;, ip: &apos;fe80:0:0:0:18b4:e00:87b7:64f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
-	at com.saucelabs.SampleSauceTest.setUp(SampleSauceTest.java:130)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
-	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
-	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</error>
-    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-</system-err>
-  </testcase>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest2[4]" time="3.268">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.saucelabs.SampleSauceTest.tearDown(SampleSauceTest.java:176)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
-	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
-	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</error>
-  </testcase>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest1[4]" time="3.27">
-    <error message="Unable to parse remote response: Unsupported OS/browser/version/device combo: OS: &apos;Windows 10&apos;, Browser: &apos;edge&apos;, Version: &apos;latest&apos;, Device: &apos;unspecified&apos;
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;Leo-Laskin-NAT.local&apos;, ip: &apos;fe80:0:0:0:18b4:e00:87b7:64f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: Unable to parse remote response: Unsupported OS/browser/version/device combo: OS: &apos;Windows 10&apos;, Browser: &apos;edge&apos;, Version: &apos;latest&apos;, Device: &apos;unspecified&apos;
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;Leo-Laskin-NAT.local&apos;, ip: &apos;fe80:0:0:0:18b4:e00:87b7:64f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
-	at com.saucelabs.SampleSauceTest.setUp(SampleSauceTest.java:130)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
-	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
-	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</error>
-  </testcase>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest1[4]" time="3.27">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.saucelabs.SampleSauceTest.tearDown(SampleSauceTest.java:176)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
-	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
-	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</error>
-  </testcase>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest1[0]" time="13.876">
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[14]" time="11.768">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.saucelabs.SampleSauceTest.sauceTest1(SampleSauceTest.java:148)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -206,6 +78,137 @@ Driver info: driver.version: RemoteWebDriver
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=ad8d63eb2bf4480da8f4167e3e409c81 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[14]
+SauceOnDemandSessionID=a7e860787c9541eca919e6b7c0ea90f5 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[5]
+Job link: https://saucelabs.com/jobs/ad8d63eb2bf4480da8f4167e3e409c81?auth=9aa3b6ac6a0b031a9cf00f37bf41a9b3
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Jan 23, 2018 12:27:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[5]" time="12.205">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Job link: https://saucelabs.com/jobs/a7e860787c9541eca919e6b7c0ea90f5?auth=4cba58ecd6ab778eb56277c65bf5fe2d
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[7]" time="13.769">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=a614061e417c4f558dc636cb785d728d job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[7]
+Job link: https://saucelabs.com/jobs/a614061e417c4f558dc636cb785d728d?auth=ef6596a71e8b6c0fb5932712b46fffda
+</system-out>
+    <system-err>Jan 23, 2018 12:27:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[0]" time="16.9">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
@@ -219,34 +222,46 @@ Driver info: driver.version: RemoteWebDriver
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
     <system-out>Page header is: Secure Login Screen
-SauceOnDemandSessionID=c0c86fdb9c764e4092e89d0de9fcb7c5 job-name=com.saucelabs.SampleSauceTest.sauceTest2[0]
-SauceOnDemandSessionID=f1a30d7985e94ae2b9faf66ac202c672 job-name=com.saucelabs.SampleSauceTest.sauceTest1[0]
-Job link: https://saucelabs.com/jobs/f1a30d7985e94ae2b9faf66ac202c672?auth=ab2bbe28d9ab00702c7549b49265aa9c
+SauceOnDemandSessionID=85db3bbe070b4195a32ac2d7aaf6b4f2 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[0]
+Page header is: Secure Login Screen
+SauceOnDemandSessionID=c12418c214d14996bca9283cd9716f05 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[0]
+SauceOnDemandSessionID=7f04bd11cb21453b924175296f35ccdf job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[15]
+Job link: https://saucelabs.com/jobs/85db3bbe070b4195a32ac2d7aaf6b4f2?auth=914a5e186f8119fd16607bad64b64b4f
 </system-out>
-    <system-err>Dec 27, 2017 2:15:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+    <system-err>Jan 23, 2018 12:27:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-Dec 27, 2017 2:15:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 23, 2018 12:27:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-Dec 27, 2017 2:15:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 23, 2018 12:27:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-Dec 27, 2017 2:16:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 23, 2018 12:27:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-Dec 27, 2017 2:16:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 23, 2018 12:27:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-Dec 27, 2017 2:16:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 23, 2018 12:27:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-Dec 27, 2017 2:16:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 23, 2018 12:27:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-Dec 27, 2017 2:16:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 23, 2018 12:27:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 </system-err>
   </testcase>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest2[0]" time="13.918">
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[15]" time="17.374">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.saucelabs.SampleSauceTest.sauceTest2(SampleSauceTest.java:156)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -257,6 +272,7 @@ INFO: Detected dialect: OSS
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
@@ -269,48 +285,19 @@ INFO: Detected dialect: OSS
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
-    <system-out>Job link: https://saucelabs.com/jobs/c0c86fdb9c764e4092e89d0de9fcb7c5?auth=fa001657db650b0c8804f3091e988b06
-</system-out>
-  </testcase>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest2[1]" time="14.212">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.saucelabs.SampleSauceTest.sauceTest2(SampleSauceTest.java:156)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
-	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
-	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</failure>
-    <system-out>SauceOnDemandSessionID=1a3ada90e2bf458aa5b536e34e2cca22 job-name=com.saucelabs.SampleSauceTest.sauceTest2[1]
+    <system-out>Page header is: Secure Login Screen
 Page header is: Secure Login Screen
-Job link: https://saucelabs.com/jobs/1a3ada90e2bf458aa5b536e34e2cca22?auth=4f82a58c8c02fe2c2ef21613ae7678de
+Job link: https://saucelabs.com/jobs/7f04bd11cb21453b924175296f35ccdf?auth=5b828776068ce3c380d2a24bba617c25
 </system-out>
   </testcase>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest1[3]" time="15.248">
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[0]" time="17.464"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[9]" time="0.231"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[10]" time="0.342">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.saucelabs.SampleSauceTest.sauceTest1(SampleSauceTest.java:148)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -321,6 +308,7 @@ Job link: https://saucelabs.com/jobs/1a3ada90e2bf458aa5b536e34e2cca22?auth=4f82a
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
@@ -333,27 +321,279 @@ Job link: https://saucelabs.com/jobs/1a3ada90e2bf458aa5b536e34e2cca22?auth=4f82a
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
-    <system-out>SauceOnDemandSessionID=fe0bb2b5ed8e46d296b4f47cb8b1219a job-name=com.saucelabs.SampleSauceTest.sauceTest1[3]
-Job link: https://saucelabs.com/jobs/fe0bb2b5ed8e46d296b4f47cb8b1219a?auth=6371c66fc1e5e4faefc24631611c542a
+    <system-out>Page header is: Secure Login Screen
+Job link: https://saucelabs.com/jobs/84d25c8492e8402ebc8fb88ae956cf8c?auth=83b7d137741f58a987c913e51c5e84cd
 </system-out>
   </testcase>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest2[3]" time="15.509">
-    <error message="Element does not exist in cache (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 415 milliseconds
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[15]" time="0.517"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[14]" time="0.046"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[9]" time="0.079">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Job link: https://saucelabs.com/jobs/165492d2c5d643438f3cb195b6fd9d4c?auth=890690d1931aaa1ba9120e07f7df8e7a
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[4]" time="0.387">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=30071bd5efe640d9bfe4d27d5411c5ee job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[4]
+SauceOnDemandSessionID=a6158ad0780d4126ba9d4f5136f4c68e job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[10]
+SauceOnDemandSessionID=3a18059ffcee42a8bef9a03272f43016 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[5]
+SauceOnDemandSessionID=7cb1a13ba4804d708466a13318de6877 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[4]
+Job link: https://saucelabs.com/jobs/30071bd5efe640d9bfe4d27d5411c5ee?auth=350e41a998e3ca2b9c029ad98c691dd5
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[10]" time="0.422"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[5]" time="0.121"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[4]" time="0.506"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[1]" time="0.28">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Page header is: Secure Login Screen
+Page header is: Secure Login Screen
+SauceOnDemandSessionID=06fd0d02e4144dd6974ead4e92ad39c4 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[1]
+Page header is: Secure Login Screen
+Page header is: Secure Login Screen
+Job link: https://saucelabs.com/jobs/06fd0d02e4144dd6974ead4e92ad39c4?auth=3b89871ee78d2b3784e5d8acbd065a83
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[1]" time="0.512"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[11]" time="0.119">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=39127e33a2a54e74b6b134d75778c8ee job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[2]
+SauceOnDemandSessionID=b17d2c243b6a4c75b819b8b3e930f19c job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[12]
+Job link: https://saucelabs.com/jobs/f9170d8928ef4aaa9aad3e90510e6a63?auth=16e47a42807b964aeccb48ac4d777670
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[2]" time="0.238">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=bae02ee578b844f6b4b9b4e9d44cbe37 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[6]
+Job link: https://saucelabs.com/jobs/39127e33a2a54e74b6b134d75778c8ee?auth=5f6266b603a15d3c1ba9f97f708c195e
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[12]" time="0.304">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Job link: https://saucelabs.com/jobs/b17d2c243b6a4c75b819b8b3e930f19c?auth=6e57e8778cf1601d8c61f929a7ab44a2
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[6]" time="0.442">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=02536c0491824d8d806fa91ba0bfd9d3 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[11]
+SauceOnDemandSessionID=4a19578c8b694c25b4e16e659b0984c3 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[6]
+Job link: https://saucelabs.com/jobs/bae02ee578b844f6b4b9b4e9d44cbe37?auth=81815c4461110147a7442870f3e66827
+</system-out>
+    <system-err>Jan 23, 2018 12:27:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[11]" time="0.5"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[6]" time="0.021"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[12]" time="0.174"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[2]" time="0.007"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[7]" time="0.176"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[8]" time="3.908">
+    <error message="Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a&apos;, time: &apos;2015-10-07 15:48:56&apos;
-System info: host: &apos;itako51169.prod.miso&apos;, ip: &apos;172.20.51.169&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=8.0.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
-Session ID: null
-Command duration or timeout: 0 milliseconds" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: Element does not exist in cache (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 415 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;10.100.25.185&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXD4AC99EE
+Command duration or timeout: 0 milliseconds" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a&apos;, time: &apos;2015-10-07 15:48:56&apos;
-System info: host: &apos;itako51169.prod.miso&apos;, ip: &apos;172.20.51.169&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=8.0.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
-Session ID: null
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;10.100.25.185&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXD4AC99EE
 Command duration or timeout: 0 milliseconds
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -368,7 +608,7 @@ Command duration or timeout: 0 milliseconds
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-	at com.saucelabs.SampleSauceTest.sauceTest2(SampleSauceTest.java:156)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -380,6 +620,7 @@ Command duration or timeout: 0 milliseconds
 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
@@ -390,58 +631,106 @@ Command duration or timeout: 0 milliseconds
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.StaleElementReferenceException: Element does not exist in cache (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 415 milliseconds
+Caused by: org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a&apos;, time: &apos;2015-10-07 15:48:56&apos;
-System info: host: &apos;itako51169.prod.miso&apos;, ip: &apos;172.20.51.169&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=8.0.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
-Session ID: null
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;10.100.25.185&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXD4AC99EE
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;Leo-Laskin-NAT.local&apos;, ip: &apos;fe80:0:0:0:18b4:e00:87b7:64f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
+System info: host: &apos;Leo-Laskin-NAT&apos;, ip: &apos;2600:1010:b067:7ac7:788a:31a3:e4b9:101f&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: driver.version: RemoteWebDriver
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:326)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:178)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:179)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:334)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
 	at com.sun.proxy.$Proxy2.getText(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:384)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:385)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
 	at com.sun.proxy.$Proxy3.getText(Unknown Source)
 	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:30)
 	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
-	... 3 more
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 </error>
     <system-out>Page header is: Secure Login Screen
-SauceOnDemandSessionID=28699a0bfbed4ed0a0dcb796cecbbd7e job-name=com.saucelabs.SampleSauceTest.sauceTest2[3]
-SauceOnDemandSessionID=8deb3b3b404046c2ae6b2fc63725d847 job-name=com.saucelabs.SampleSauceTest.sauceTest2[2]
-Job link: https://saucelabs.com/jobs/28699a0bfbed4ed0a0dcb796cecbbd7e?auth=d3752f7f9878d8680ca15667d01612a9
+SauceOnDemandSessionID=0652afe2aa3849168c92a57f238f761b job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[8]
+Job link: https://saucelabs.com/jobs/0652afe2aa3849168c92a57f238f761b?auth=4d78eff1450ea0c106f8ad2ea23d19aa
 </system-out>
+    <system-err>Jan 23, 2018 12:27:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
   </testcase>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest2[2]" time="15.519">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.saucelabs.SampleSauceTest.sauceTest2(SampleSauceTest.java:156)
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[13]" time="4.167">
+    <error message="Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.36.182&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX84489409
+Command duration or timeout: 0 milliseconds" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.36.182&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX84489409
+Command duration or timeout: 0 milliseconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -453,6 +742,7 @@ Job link: https://saucelabs.com/jobs/28699a0bfbed4ed0a0dcb796cecbbd7e?auth=d3752
 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
@@ -463,16 +753,87 @@ Job link: https://saucelabs.com/jobs/28699a0bfbed4ed0a0dcb796cecbbd7e?auth=d3752
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-</failure>
-    <system-out>Job link: https://saucelabs.com/jobs/8deb3b3b404046c2ae6b2fc63725d847?auth=8427429e701c35536ca21c3dde3c1a8b
+Caused by: org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.36.182&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX84489409
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;Leo-Laskin-NAT&apos;, ip: &apos;2600:1010:b067:7ac7:788a:31a3:e4b9:101f&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy2.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:385)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy3.getText(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:30)
+	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</error>
+    <system-out>SauceOnDemandSessionID=1b0beeb9544841f2a3843c22dd130032 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[13]
+Job link: https://saucelabs.com/jobs/1b0beeb9544841f2a3843c22dd130032?auth=1b3a8f984da7240f00a4b49e1e9b419d
 </system-out>
+    <system-err>Jan 23, 2018 12:27:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
   </testcase>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest1[2]" time="16.015">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.saucelabs.SampleSauceTest.sauceTest1(SampleSauceTest.java:148)
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[3]" time="4.267">
+    <error message="Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.35.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXB9F46B66
+Command duration or timeout: 0 milliseconds" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.35.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXB9F46B66
+Command duration or timeout: 0 milliseconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -483,6 +844,82 @@ Job link: https://saucelabs.com/jobs/28699a0bfbed4ed0a0dcb796cecbbd7e?auth=d3752
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.35.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXB9F46B66
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;Leo-Laskin-NAT&apos;, ip: &apos;2600:1010:b067:7ac7:788a:31a3:e4b9:101f&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy2.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:385)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy3.getText(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:30)
+	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</error>
+    <system-out>SauceOnDemandSessionID=0a1d0c0b809f491280fd40541a2b7205 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[3]
+Job link: https://saucelabs.com/jobs/0a1d0c0b809f491280fd40541a2b7205?auth=80086cf73fe1b9a6ec4e9b5691504203
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[13]" time="5.136"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[3]" time="1.068">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyGoodPasswordTest(SampleSauceTest.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
@@ -496,18 +933,26 @@ Job link: https://saucelabs.com/jobs/28699a0bfbed4ed0a0dcb796cecbbd7e?auth=d3752
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
     <system-out>Page header is: Secure Login Screen
-SauceOnDemandSessionID=70a272cfe2104c858b83a3299d179f5a job-name=com.saucelabs.SampleSauceTest.sauceTest1[2]
-Job link: https://saucelabs.com/jobs/70a272cfe2104c858b83a3299d179f5a?auth=ace1a634f91c2005f349fa74b09162c9
+Page header is: Secure Login Screen
+SauceOnDemandSessionID=1db3ebde770446798e083f3186b11ed9 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[3]
+Job link: https://saucelabs.com/jobs/1db3ebde770446798e083f3186b11ed9?auth=c8142eda1b60e23aec48d64d773b3840
 </system-out>
+    <system-err>Jan 23, 2018 12:27:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
   </testcase>
-  <testcase classname="com.saucelabs.SampleSauceTest" name="sauceTest1[1]" time="16.453">
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[20]" time="0.29"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[16]" time="0.842">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.saucelabs.SampleSauceTest.sauceTest1(SampleSauceTest.java:148)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
@@ -516,6 +961,7 @@ Job link: https://saucelabs.com/jobs/70a272cfe2104c858b83a3299d179f5a?auth=ace1a
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
@@ -528,8 +974,1156 @@ Job link: https://saucelabs.com/jobs/70a272cfe2104c858b83a3299d179f5a?auth=ace1a
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
-    <system-out>SauceOnDemandSessionID=fa0fd41bd5084269ab0cac83d892ce94 job-name=com.saucelabs.SampleSauceTest.sauceTest1[1]
-Job link: https://saucelabs.com/jobs/fa0fd41bd5084269ab0cac83d892ce94?auth=a42eb010e9675d927a085235a4db5c3d
+    <system-out>Page header is: Secure Login Screen
+SauceOnDemandSessionID=bd16bae59ee2424c8158164e48e42046 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[16]
+SauceOnDemandSessionID=69f5741e7ec545f8957cf1215aaa9687 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[19]
+SauceOnDemandSessionID=88a9e3bd8dce4ba58c6c840d8b4eb020 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[20]
+Job link: https://saucelabs.com/jobs/bd16bae59ee2424c8158164e48e42046?auth=8032c67c6f3a6ae3f7c4c4ec6971ebd1
 </system-out>
   </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[19]" time="0.988">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Page header is: Secure Login Screen
+SauceOnDemandSessionID=3ce650ee7b8742ebb98dc06adbf7b19e job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[19]
+Job link: https://saucelabs.com/jobs/69f5741e7ec545f8957cf1215aaa9687?auth=667698a750b86b2c9fca10226daaaadb
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[19]" time="0.998"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[20]" time="0.05">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Job link: https://saucelabs.com/jobs/88a9e3bd8dce4ba58c6c840d8b4eb020?auth=f047a12763ca2c22cc89da7e9038620f
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[17]" time="0.316">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=589a80aebb30475199b29b4d99350d67 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[17]
+Page header is: Secure Login Screen
+Job link: https://saucelabs.com/jobs/589a80aebb30475199b29b4d99350d67?auth=b783df6eca7ad9169497e1d49dbe0c76
+SauceOnDemandSessionID=4734b8c2abb7459bb9e5a87428671678 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[16]
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[16]" time="0.385"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[21]" time="0.062">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Job link: https://saucelabs.com/jobs/1cba98fa19de4ab888bbd821ab5a9ce7?auth=1b1c39de4e894d82405d4749e981a33c
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[17]" time="0.433"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[22]" time="0.424">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Page header is: Secure Login Screen
+Page header is: Secure Login Screen
+SauceOnDemandSessionID=79e3b2fef9834c0e91726a210ae37cc8 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[22]
+SauceOnDemandSessionID=bae1f6658011485aa44193bfa2c0ae1e job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[21]
+Job link: https://saucelabs.com/jobs/79e3b2fef9834c0e91726a210ae37cc8?auth=868c0724eb580dc179e075e6f184de6c
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[21]" time="0.504"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[8]" time="0.255"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[22]" time="0.762"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[18]" time="4.835">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=90ec5cf351a74c5186c5ea461d2bac97 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[18]
+Job link: https://saucelabs.com/jobs/90ec5cf351a74c5186c5ea461d2bac97?auth=dc51b5650ec78b77490794f9c53c639b
+</system-out>
+    <system-err>Jan 23, 2018 12:27:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[25]" time="5.09">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Page header is: Secure Login Screen
+SauceOnDemandSessionID=84bdef9b70e443cba070e9a55ebba756 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[25]
+Page header is: Secure Login Screen
+Job link: https://saucelabs.com/jobs/84bdef9b70e443cba070e9a55ebba756?auth=a4c9201613c231a83b3d8d76d4393379
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[24]" time="5.445">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=45682750635144a19874a9e21073e5f5 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[24]
+Job link: https://saucelabs.com/jobs/45682750635144a19874a9e21073e5f5?auth=59503ea167065e01bc82e3c63095b207
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[24]" time="5.623"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[25]" time="0.168"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[26]" time="1.098"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[23]" time="1.815">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyGoodPasswordTest(SampleSauceTest.java:191)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Page header is: Secure Login Screen
+Page header is: Secure Login Screen
+SauceOnDemandSessionID=19c37704cc494bae947b4299c97a67f0 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[23]
+Job link: https://saucelabs.com/jobs/19c37704cc494bae947b4299c97a67f0?auth=5ade8c7e2a4633d0d82e338cc59f2e2a
+</system-out>
+    <system-err>Jan 23, 2018 12:27:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[23]" time="2.088">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Page header is: Secure Login Screen
+SauceOnDemandSessionID=ffe4c08d68674213aa9aca7895f9d423 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[23]
+SauceOnDemandSessionID=bfc07acee29b4364ace85a7af3074b90 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[18]
+Job link: https://saucelabs.com/jobs/ffe4c08d68674213aa9aca7895f9d423?auth=79a0cd1d84c1e98b1bdafcfd6f5ce1f7
+</system-out>
+    <system-err>Jan 23, 2018 12:27:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[18]" time="2.165">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyGoodPasswordTest(SampleSauceTest.java:191)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Job link: https://saucelabs.com/jobs/bfc07acee29b4364ace85a7af3074b90?auth=28d975cb3b624208cd295810d1a94061
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[26]" time="2.508">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=e266209bb5ee46808910b5a962da62e2 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[26]
+SauceOnDemandSessionID=8a4d3510505b41c191f4f299d10f56d5 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[27]
+Job link: https://saucelabs.com/jobs/e266209bb5ee46808910b5a962da62e2?auth=01d2733332f6f761c332a31eac53591c
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[27]" time="2.509"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[27]" time="3.038">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Page header is: Secure Login Screen
+SauceOnDemandSessionID=d7d6d8eabec347629f94fe71628bfe00 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[27]
+SauceOnDemandSessionID=5d86cc5f56f84f8495c8ec64dbf032c2 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[35]
+Job link: https://saucelabs.com/jobs/d7d6d8eabec347629f94fe71628bfe00?auth=0c71785a6b70bc5c92d21f2f5c576d41
+</system-out>
+    <system-err>Jan 23, 2018 12:27:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[35]" time="3.111"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[30]" time="4.14">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=15a31aca671d4a91b3e4c5f215f6b27b job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[30]
+Page header is: Secure Login Screen
+Job link: https://saucelabs.com/jobs/15a31aca671d4a91b3e4c5f215f6b27b?auth=0ada00a9d60100bffa91d05ca6b4bbc3
+</system-out>
+    <system-err>Jan 23, 2018 12:27:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan 23, 2018 12:27:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[34]" time="4.563">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Page header is: Secure Login Screen
+Page header is: Secure Login Screen
+SauceOnDemandSessionID=eddc8ab60c0e4c8d8b574092da1e4c94 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[34]
+SauceOnDemandSessionID=5eeeb82a4085449eb497dc79c4050546 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[35]
+SauceOnDemandSessionID=d947903efc87414b97125be456fe7b32 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[29]
+SauceOnDemandSessionID=aa0c933d238b40f7a34bdbbee98b2a20 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[34]
+Job link: https://saucelabs.com/jobs/eddc8ab60c0e4c8d8b574092da1e4c94?auth=fc6037b3a5bbbcb44322d4f015262471
+</system-out>
+    <system-err>Jan 23, 2018 12:27:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[35]" time="4.574">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Job link: https://saucelabs.com/jobs/5eeeb82a4085449eb497dc79c4050546?auth=693b86bf7961b16e79e1574ee6a56585
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[29]" time="4.712">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=2d18c453755e459f8e84b2122cfb05b8 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[30]
+Job link: https://saucelabs.com/jobs/d947903efc87414b97125be456fe7b32?auth=6ce41bb827b510795c878bc1ec36b8b5
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[30]" time="4.715"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[34]" time="4.754"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[29]" time="4.873"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[31]" time="5.343">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Page header is: Secure Login Screen
+SauceOnDemandSessionID=2cd7bd38f814453ab02e2cae55646903 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[31]
+SauceOnDemandSessionID=2ee5fff95756496f8ea895b563ca872b job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[37]
+Job link: https://saucelabs.com/jobs/2cd7bd38f814453ab02e2cae55646903?auth=e3338f48429e1f642bafada51c9294d2
+</system-out>
+    <system-err>Jan 23, 2018 12:27:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[37]" time="5.364">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Job link: https://saucelabs.com/jobs/2ee5fff95756496f8ea895b563ca872b?auth=4cdcb11e04ef5cdcb520743a21b78490
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[31]" time="5.617"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[28]" time="5.91">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=f927e80b33dc4f0193c078e3318bebc5 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[28]
+Page header is: Secure Login Screen
+Page header is: Secure Login Screen
+Job link: https://saucelabs.com/jobs/f927e80b33dc4f0193c078e3318bebc5?auth=1f48000de3216a5ff184424842281812
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[37]" time="6.135"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[32]" time="6.388">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>Page header is: Secure Login Screen
+SauceOnDemandSessionID=ed155256c7ec4fc7872511b60d39cfb1 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[32]
+SauceOnDemandSessionID=20f8db025a894789ab64a725737c89d7 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[32]
+SauceOnDemandSessionID=eeb4a167129d4462b174b864e34e031d job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[36]
+Job link: https://saucelabs.com/jobs/ed155256c7ec4fc7872511b60d39cfb1?auth=3bab561e31ede5760de8343eb5363881
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[32]" time="6.412"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[36]" time="6.479"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[28]" time="6.734"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[36]" time="6.928">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=cd3f8a77825e4c978ead6294503a658b job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[36]
+Job link: https://saucelabs.com/jobs/cd3f8a77825e4c978ead6294503a658b?auth=109d1660b94a922e4d1b40ee8507f697
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[39]" time="7.196">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>SauceOnDemandSessionID=2f2938d4104e466fa22342d64280b20a job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[39]
+Job link: https://saucelabs.com/jobs/2f2938d4104e466fa22342d64280b20a?auth=0629c0d7093a2e801541ff94f40932c8
+</system-out>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[39]" time="8.199"/>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[33]" time="10.78">
+    <error message="Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.116.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX1AE20BAB
+Command duration or timeout: 0 milliseconds" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.116.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX1AE20BAB
+Command duration or timeout: 0 milliseconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at com.saucelabs.SampleSauceTest.verifyGoodPasswordTest(SampleSauceTest.java:191)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.116.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX1AE20BAB
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;Leo-Laskin-NAT&apos;, ip: &apos;2600:1010:b067:7ac7:788a:31a3:e4b9:101f&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy2.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:385)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy3.getText(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:30)
+	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</error>
+    <system-out>Page header is: Secure Login Screen
+SauceOnDemandSessionID=50c6f13894cd40008b366aaa639acef7 job-name=com.saucelabs.SampleSauceTest.verifyGoodPasswordTest[33]
+Job link: https://saucelabs.com/jobs/50c6f13894cd40008b366aaa639acef7?auth=0d21aaeb3c448a19a4609a3175f425bb
+</system-out>
+    <system-err>Jan 23, 2018 12:28:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[33]" time="13.563">
+    <error message="Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;10.100.24.60&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXBB1603A8
+Command duration or timeout: 0 milliseconds" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;10.100.24.60&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXBB1603A8
+Command duration or timeout: 0 milliseconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;10.100.24.60&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXBB1603A8
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;Leo-Laskin-NAT&apos;, ip: &apos;2600:1010:b067:7ac7:788a:31a3:e4b9:101f&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy2.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:385)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy3.getText(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:30)
+	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</error>
+    <system-out>SauceOnDemandSessionID=eea3ac551b82492399293f4c56a28556 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[33]
+Job link: https://saucelabs.com/jobs/eea3ac551b82492399293f4c56a28556?auth=3e385fefd8812bb6ff21a05b4bfedf2c
+</system-out>
+    <system-err>Jan 23, 2018 12:28:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyBadPasswordTest[38]" time="15.875">
+    <error message="Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.115.221&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX25929E20
+Command duration or timeout: 0 milliseconds" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.115.221&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX25929E20
+Command duration or timeout: 0 milliseconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at com.saucelabs.SampleSauceTest.verifyBadPasswordTest(SampleSauceTest.java:199)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Stale element reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.115.221&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=ANY, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, platformName=windows}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX25929E20
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;Leo-Laskin-NAT&apos;, ip: &apos;2600:1010:b067:7ac7:788a:31a3:e4b9:101f&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy2.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:385)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy3.getText(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:30)
+	at org.openqa.selenium.remote.server.handler.GetElementText.call(GetElementText.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</error>
+    <system-out>SauceOnDemandSessionID=911ec0ac3b774a74a9c4323471aebc69 job-name=com.saucelabs.SampleSauceTest.verifyBadPasswordTest[38]
+Page header is: Secure Login Screen
+Job link: https://saucelabs.com/jobs/911ec0ac3b774a74a9c4323471aebc69?auth=fb11409a54a804d80c1b554b8538eb38
+</system-out>
+    <system-err>Jan 23, 2018 12:28:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.saucelabs.SampleSauceTest" name="verifyGoodPasswordTest[38]" time="16.468"/>
 </testsuite>
