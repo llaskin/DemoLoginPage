@@ -110,30 +110,30 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         browsers.add(new String[]{"Windows 10", "16.16299", "MicrosoftEdge"});
         browsers.add(new String[]{"Windows 8.1", "43.0", "Chrome"});
         browsers.add(new String[]{"Windows 7", "latest", "Chrome"});
-        browsers.add(new String[]{"Windows 8.1", "11", "internet explorer"});
-        browsers.add(new String[]{"Windows 8", "10", "internet explorer"});
-        browsers.add(new String[]{"Windows 10", "16.16299", "MicrosoftEdge"});
-        browsers.add(new String[]{"Windows 8.1", "43.0", "Chrome"});
-        browsers.add(new String[]{"Windows 7", "latest", "Chrome"});
-        browsers.add(new String[]{"Windows 8.1", "11", "internet explorer"});
-        browsers.add(new String[]{"Windows 8", "10", "internet explorer"});
-        browsers.add(new String[]{"Windows 10", "16.16299", "MicrosoftEdge"});
-        browsers.add(new String[]{"Windows 8.1", "43.0", "Chrome"});
-        browsers.add(new String[]{"Windows 7", "latest", "Chrome"});
-        browsers.add(new String[]{"Windows 8.1", "11", "internet explorer"});
-        browsers.add(new String[]{"Windows 8", "10", "internet explorer"});
-        browsers.add(new String[]{"Windows 10", "16.16299", "MicrosoftEdge"});
-        browsers.add(new String[]{"Windows 8.1", "43.0", "Chrome"});
-        browsers.add(new String[]{"Windows 7", "latest", "Chrome"});
-        browsers.add(new String[]{"Windows 8.1", "11", "internet explorer"});
-        browsers.add(new String[]{"Windows 8", "10", "internet explorer"});
-        browsers.add(new String[]{"Windows 10", "16.16299", "MicrosoftEdge"});
-        browsers.add(new String[]{"Windows 8.1", "43.0", "Chrome"});
-        browsers.add(new String[]{"Windows 7", "latest", "Chrome"});
-        browsers.add(new String[]{"Windows 8.1", "11", "internet explorer"});
-        browsers.add(new String[]{"Windows 8", "10", "internet explorer"});
-        browsers.add(new String[]{"Windows 10", "16.16299", "MicrosoftEdge"});
-        browsers.add(new String[]{"Windows 8.1", "43.0", "Chrome"});
+//         browsers.add(new String[]{"Windows 8.1", "11", "internet explorer"});
+//         browsers.add(new String[]{"Windows 8", "10", "internet explorer"});
+//         browsers.add(new String[]{"Windows 10", "16.16299", "MicrosoftEdge"});
+//         browsers.add(new String[]{"Windows 8.1", "43.0", "Chrome"});
+//         browsers.add(new String[]{"Windows 7", "latest", "Chrome"});
+//         browsers.add(new String[]{"Windows 8.1", "11", "internet explorer"});
+//         browsers.add(new String[]{"Windows 8", "10", "internet explorer"});
+//         browsers.add(new String[]{"Windows 10", "16.16299", "MicrosoftEdge"});
+//         browsers.add(new String[]{"Windows 8.1", "43.0", "Chrome"});
+//         browsers.add(new String[]{"Windows 7", "latest", "Chrome"});
+//         browsers.add(new String[]{"Windows 8.1", "11", "internet explorer"});
+//         browsers.add(new String[]{"Windows 8", "10", "internet explorer"});
+//         browsers.add(new String[]{"Windows 10", "16.16299", "MicrosoftEdge"});
+//         browsers.add(new String[]{"Windows 8.1", "43.0", "Chrome"});
+//         browsers.add(new String[]{"Windows 7", "latest", "Chrome"});
+//         browsers.add(new String[]{"Windows 8.1", "11", "internet explorer"});
+//         browsers.add(new String[]{"Windows 8", "10", "internet explorer"});
+//         browsers.add(new String[]{"Windows 10", "16.16299", "MicrosoftEdge"});
+//         browsers.add(new String[]{"Windows 8.1", "43.0", "Chrome"});
+//         browsers.add(new String[]{"Windows 7", "latest", "Chrome"});
+//         browsers.add(new String[]{"Windows 8.1", "11", "internet explorer"});
+//         browsers.add(new String[]{"Windows 8", "10", "internet explorer"});
+//         browsers.add(new String[]{"Windows 10", "16.16299", "MicrosoftEdge"});
+//         browsers.add(new String[]{"Windows 8.1", "43.0", "Chrome"});
 
 
 
@@ -197,7 +197,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         driver.findElement(By.id("password")).sendKeys("BadPassword");
         driver.findElement(By.cssSelector("button.radius")).click();
         assertTrue(driver.findElement(By.tagName("html")).getText().contains("Secure Login Screen"));
-        Thread.sleep(10000);
+        Thread.sleep(5000);
 
     }
 
