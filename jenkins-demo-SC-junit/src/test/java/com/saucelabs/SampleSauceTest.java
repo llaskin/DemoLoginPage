@@ -197,6 +197,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         driver.findElement(By.id("password")).sendKeys("BadPassword");
         driver.findElement(By.cssSelector("button.radius")).click();
         assertTrue(driver.findElement(By.tagName("html")).getText().contains("Secure Login Screen"));
+        Thread.sleep(10000);
 
     }
 
